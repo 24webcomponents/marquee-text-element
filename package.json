@@ -1,17 +1,18 @@
 {
-  "name": "@github/custom-element-element",
-  "version": "0.0.1",
-  "description": "Boilerplate for creating a custom element.",
-  "main": "dist/custom-element.js",
-  "module": "dist/custom-element.js",
+  "name": "marquee-text-element",
+  "version": "0.0.0-development",
+  "description": "An elemen which scrolls the text inside it like the traditional [marquee](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) element found in the browsers of yesteryear.",
+  "main": "dist/marquee-text-element.js",
+  "module": "dist/marquee-text-element.js",
   "type": "module",
-  "types": "dist/custom-elements.d.ts",
+  "types": "dist/marquee-text-elements.d.ts",
   "license": "MIT",
-  "repository": "github/custom-element-boilerplate",
+  "repository": "24webcomponents/marquee-text-element",
   "files": [
     "dist"
   ],
   "scripts": {
+    "meta": "custom-elements-manifest analyze",
     "clean": "rm -rf dist",
     "lint": "eslint . --ext .ts,.js",
     "prebuild": "npm run clean && npm run lint && mkdir dist",

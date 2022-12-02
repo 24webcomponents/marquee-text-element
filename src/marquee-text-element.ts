@@ -1,25 +1,34 @@
+const DEFAULT_DURATION = '5s'
+
+/**
+ * ```html
+ * <marquee-text duration="2s">
+ *   This text will scroll across the page over 2s
+ * </marquee-text>
+ * ```
+ */
 class MarqueeTextElement extends HTMLElement {
   static observedAttributes = ['duration']
 
-  
   #renderRoot = this.attachShadow({mode: 'open'})
 
   get duration() {
     const value = this.getAttribute('duration')
-    return value
+    return value ?? DEFAULT_DURATION
   }
 
   set duration(value: string) {
     this.setAttribute('duration', value)
   }
 
-  attributeChangedCallback(name: 'duration', oldValue: null|string, newValue: null|string) {
+  attributeChangedCallback(name: 'duration', oldValue: null | string, newValue: null | string) {
     if (oldValue === newValue) return
     if (newValue === null) return
     if (newValue) this.style.setProperty('--animation-duration', newValue)
   }
 
   connectedCallback(): void {
+    // eslint-disable-next-line github/no-inner-html
     this.#renderRoot.innerHTML = `
     <style>
       @keyframes marqueeeee {
@@ -31,7 +40,7 @@ class MarqueeTextElement extends HTMLElement {
         }
       }
       :host slot {
-        animation: var(--animation-duration, 5s) linear infinite marqueeeee;
+        animation: var(--animation-duration, ${DEFAULT_DURATION}) linear infinite marqueeeee;
         display: inline-block;
       }
       :host {

@@ -1,11 +1,11 @@
-# &lt;custom-element&gt; element
+# &lt;marquee-text&gt; element
 
-Boilerplate for creating a custom element.
+An elemen which scrolls the text inside it like the traditional [marquee](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) element found in the browsers of yesteryear.
 
 ## Installation
-Available on [npm](https://www.npmjs.com/) as [**@github/custom-element-element**](https://www.npmjs.com/package/@github/custom-element-element).
+Available on [npm](https://www.npmjs.com/) as [**marquee-text-element**](https://www.npmjs.com/package/marquee-text-element).
 ```
-$ npm install --save @github/custom-element-element
+$ npm install --save marquee-text-element
 ```
 
 ## Usage
@@ -15,22 +15,19 @@ $ npm install --save @github/custom-element-element
 Import as ES modules:
 
 ```js
-import '@github/custom-element-element'
+import 'marquee-text-element'
 ```
 
 Include with a script tag:
 
 ```html
-<script type="module" src="./node_modules/@github/custom-element-element/dist/index.js">
+<script type="module" src="./node_modules/marquee-text-element/dist/index.js">
 ```
 
-An example Custom Element. This documentation ends up in the
-README so describe how this elements works here.
-
-You can event add examples on the element is used with Markdown.
-
-```
-<custom-element></custom-element>
+```html
+<marquee-text duration="2s">
+  This text will scroll across the page over 2s
+</marquee-text>
 ```
 
 ## Browser support

@@ -1,9 +1,10 @@
 {
+  "version": 1.1,
   "tags": [
     {
-      "name": "custom-element",
-      "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<custom-element></custom-element>\n```",
-      "attributes": []
+      "name": "marquee-text",
+      "description": "```html\n<marquee-text duration=\"2s\">\n  This text will scroll across the page over 2s\n</marquee-text>\n```",
+      "attributes": [{ "name": "duration", "values": [] }]
     }
   ]
 }

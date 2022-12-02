@@ -4,16 +4,32 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "src/custom-element.ts",
+      "path": "src/marquee-text-element.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<custom-element></custom-element>\n```",
-          "name": "CustomElementElement",
+          "description": "```html\n<marquee-text duration=\"2s\">\n  This text will scroll across the page over 2s\n</marquee-text>\n```",
+          "name": "MarqueeTextElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "#renderRoot",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "duration"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "duration"
+            }
+          ],
           "superclass": {
             "name": "HTMLElement"
           },
-          "tagName": "custom-element",
+          "tagName": "marquee-text",
           "customElement": true
         }
       ],
@@ -22,16 +38,16 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "name": "CustomElementElement",
-            "module": "src/custom-element.ts"
+            "name": "MarqueeTextElement",
+            "module": "src/marquee-text-element.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "custom-element",
+          "name": "marquee-text",
           "declaration": {
-            "name": "CustomElementElement",
-            "module": "src/custom-element.ts"
+            "name": "MarqueeTextElement",
+            "module": "src/marquee-text-element.ts"
           }
         }
       ]
