@@ -2,10 +2,10 @@
   "name": "marquee-text-element",
   "version": "0.0.0-development",
   "description": "An elemen which scrolls the text inside it like the traditional [marquee](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) element found in the browsers of yesteryear.",
-  "main": "dist/marquee-text-element.js",
-  "module": "dist/marquee-text-element.js",
+  "main": "dist/src/marquee-text-element.js",
+  "module": "dist/src/marquee-text-element.js",
   "type": "module",
-  "types": "dist/marquee-text-elements.d.ts",
+  "types": "dist/src/marquee-text-elements.d.ts",
   "license": "MIT",
   "repository": "24webcomponents/marquee-text-element",
   "files": [
