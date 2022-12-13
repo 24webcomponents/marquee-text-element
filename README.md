@@ -1,6 +1,6 @@
 # &lt;marquee-text&gt; element
 
-An elemen which scrolls the text inside it like the traditional [marquee](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) element found in the browsers of yesteryear.
+An element which scrolls the text inside it like the traditional [marquee](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) element found in the browsers of yesteryear.
 
 ## Installation
 Available on [npm](https://www.npmjs.com/) as [**marquee-text-element**](https://www.npmjs.com/package/marquee-text-element).
